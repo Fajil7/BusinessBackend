@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.laptop-view{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .laptop-view{
+    display: none;
+    background-color: red;
+
+  }
+  .mobile-hide{
+    display: none;
+  }
+}
+
+  .mobile-view-nav-container{
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .mobile-view-nav-container{
+      display: flex;
+      justify-content: space-between;
+      margin: 13px;
+     
+    }
+  }
+  .icon{
+    height: 43px;
+    width: 43px;
+    cursor: pointer;
+  }
+  .unorder-list-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .item{
+    margin: 5px;
+  }
+  .cross-icon{
+    height: 43px;
+    width: 33px;
+    cursor: pointer;
+  }
