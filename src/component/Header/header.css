@@ -45,6 +45,10 @@
   .item{
     margin: 5px;
   }
+  .li:hover{
+    color: #ffffff;
+    background-color: #000000;
+  }
   .cross-icon{
     height: 43px;
     width: 33px;
