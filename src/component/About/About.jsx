@@ -11,7 +11,7 @@ function About() {
                     className="about-img"
                 />
             </div>
-            <div>
+            <div className='about-section-container'>
                 <h1 class="about-main-heading">Welcome to The Business Sphere</h1>
                 <h1 class="about-1-heading">About</h1>
                 <p class="paragraph">Welcome to Business Sphere, the pioneering networking

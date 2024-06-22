@@ -18,9 +18,9 @@ function Contact() {
             <div className="contact-main-container">
                 <h1 className="contact-heading">Contact</h1>
                 <div className="contact-container">
-                    <p className="contact-way flex items-center"><FaPhoneAlt className='icon'/> +91-85 82 84 84 34</p>
-                    <p className="contact-way flex items-center"><IoMdMail className='icon'/> sskjha2016@gmail.com</p>
-                    <p className="contact-way flex items-center"><FaLocationDot className='icon'/> Kolkata 700001</p>
+                    <p className="contact-way flex items-center"><FaPhoneAlt className='icon-footer'/> +91-85 82 84 84 34</p>
+                    <p className="contact-way flex items-center"><IoMdMail className='icon-footer'/> sskjha2016@gmail.com</p>
+                    <p className="contact-way flex items-center"><FaLocationDot className='icon-footer'/> Kolkata 700001</p>
                 </div>
             </div>
             <div className="img-and-form-container">
