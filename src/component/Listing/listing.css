@@ -149,6 +149,11 @@ body{
   background-color: azure;
   padding: 5px;
 }
+@media screen and (max-width: 600px) {
+  .single-list-input{
+    width: 55vw;
+  }
+}
 .blood-input-container{
     background-color: antiquewhite;
     width: 12vw;
@@ -208,6 +213,7 @@ body{
 @media screen and (max-width: 600px) {
   .text-area{
     height: 133px;
+    width: 55vw;
 
   }
 }

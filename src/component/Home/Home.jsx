@@ -6,12 +6,14 @@ import './home.css'
 import TestimonialSlider from '../TestimonialSlider/Testimonial';
 
 function Home() {
-	var settings = {
+	const settings = {
 		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 1,
+		autoplay: true,
 		slidesToScroll: 1,
+		autoplaySpeed: 400
 	};
 	return (
 		<section>
@@ -112,12 +114,11 @@ function Home() {
 					</div>
 					<div className="detail-card">
 						<h1 className="abou-heading">Why Choose Us</h1>
-						<p className="list-item">1.<span> </span>Networking</p>
+						<p className="list-item">1.<span> </span> Exclusive Networking</p>
 						<p className="list-item">2.<span> </span>Guidance from Leaders</p>
 						<p className="list-item">3.<span> </span>Recognition and Awards</p>
-						<p className="list-item">4.<span> </span>Recognition and Awards</p>
-						<p className="list-item">5.<span> </span>Social Responsibility</p>
-						<p className="list-item">6.<span> </span>Strengthen Bonds</p>
+						<p className="list-item">4.<span> </span>Social Responsibility</p>
+						<p className="list-item">5.<span> </span>Strengthen Bonds</p>
 					</div>
 				</div>
 			</div>

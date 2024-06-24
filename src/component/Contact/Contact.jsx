@@ -34,33 +34,33 @@ function Contact() {
                 <form>
                     <div className="two-input-container">
                         <div className="input-container">
-                            <laberl className="label required">Name*</laberl>
+                            <label className="label required">Name*</label>
                             <br />
                             <input type="text" className="input" name="name" required />
                         </div>
                         <div className="input-container">
-                            <laberl className="label required">Phone*</laberl>
+                            <label className="label required">Phone*</label>
                             <br />
                             <input type="text" className="input" name="name" required />
                         </div>
                     </div>
                     <div className="two-input-container">
                         <div className="input-container">
-                            <laberl className="label">Email</laberl>
+                            <label className="label">Email</label>
                             <br />
                             <input type="text" className="input" name="name" />
                         </div>
                         <div className="input-container">
-                            <laberl className="label required">Subject*</laberl>
+                            <label className="label required">Subject*</label>
                             <br />
                             <input type="text" className="input" name="name" required />
                         </div>
                     </div>
-                    <div class="align">
-                        <div class="input-two">
-                            <laberl class="label ">Message</laberl>
+                    <div className="align">
+                        <div className="input-two">
+                            <label className="label ">Message</label>
                             <br />
-                            <textarea class="textarea" rows="4" cols="50" placeholder="Max 350 characters"></textarea>
+                            <textarea className="textarea" rows="4" cols="50" placeholder="Max 350 characters"></textarea>
                         </div>
                     </div>
                     <div className="btn-container">
