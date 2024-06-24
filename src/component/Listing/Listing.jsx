@@ -15,7 +15,8 @@ function Listing() {
             <div className="form-content-container">
                 <div className="heading-text-container">
                     <h1 className="listing-heading">Listing Form</h1>
-                    <p className="text">Please Fill the Form Carefully.Informations shared by you is important for your Credential & Directory listing.</p>
+                    <h3 className="text">Please Fill the Form Carefully.</h3>
+                    <p className='text-2'>Informations shared by you is important for your Credential & Directory listing.</p>
                 </div>
                 <form className="listing-form-container">
                     <div className="two-list-input-container">
@@ -506,7 +507,7 @@ function Listing() {
                             </div>
                         </div>
                         <div className="qr-img-container">
-                            <img className="gpay-qr"
+                        <img className="gpay-qr"
                                 src="https://businesssphere.info/images/GpayQR.jpeg"
                             />
                             <p className="gpay-text">Gpay, Paytm and Phonepay is at +91-9331177595</p>
@@ -516,7 +517,7 @@ function Listing() {
                         <div className="checkbox-input-container">
                             <input type="checkbox" className="checkbox-input" required />
                             <p>
-                                I accept all the Terms & Conditions framed to manage the Forum & any changes therein.I have Paid/ Ready to pay Rs. 150 as Annual Website Listing Fees for Directory Listing and maintenance of Website.Form once filled will not be editable. Backend and support team to be requested for any changes, I accept it to be nominally charged.
+                                I accept all the Terms & Conditions framed to manage the Forum & any changes therein. I have Paid/ Ready to pay Rs. 150 as Annual Website Listing Fees for Directory Listing and maintenance of Website. Form once filled will not be editable. Backend and support team to be requested for any changes, I accept it to be nominally charged.
                             </p>
                         </div>
                     </div>

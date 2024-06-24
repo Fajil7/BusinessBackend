@@ -20,8 +20,10 @@
     display: none;
   }
 }
-
-  .mobile-view-nav-container{
+.logo:hover{
+  height: 43px;
+}
+.mobile-view-nav-container{
     display: none;
   }
   @media screen and (max-width: 600px) {
@@ -42,15 +44,17 @@
     font-size: 16px;
     padding: 10px;
   }
-  .item{
-    margin: 5px;
+  .item-hover{
+    font-size: 19px;
   }
-  .li:hover{
-    color: #ffffff;
-    background-color: #000000;
+  .item-hover:hover{
+    color: rgb(50, 200, 205);
+    font-weight: bold;
+
   }
   .cross-icon{
     height: 43px;
     width: 33px;
     cursor: pointer;
   }
+  

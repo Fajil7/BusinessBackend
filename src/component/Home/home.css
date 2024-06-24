@@ -90,7 +90,7 @@ body {
     }
 }
 .about-detail-card {
-    background-color: rgb(218, 231, 227);
+    
     display: flex;
     align-items: center;
     width: 70%; /* Changed from 70vw to 100% */
@@ -109,11 +109,17 @@ body {
 
 
 .detail-card {
-    background: #1a76d1;
+    background-color: beige;
+    box-shadow: 0 0 25px 0 black;
+    border-radius: 5px;
     width: 55%; /* Changed from 55vw to 100% */
     height: 244px;
     margin: 10px ;
     padding: 10px; /* Center horizontally */
+}
+.detail-card:hover{
+    width: 65%;
+    height: 274px;
 }
 @media screen and (max-width: 600px) {
     .detail-card {
@@ -121,27 +127,32 @@ body {
         margin-left: 0;
         margin-bottom: 10px;
     }
+    .detail-card:hover{
+        width: 90%;
+
+        
+    }
 }
 .abou-heading {
-    color: #ffffff;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 28px;
     margin-top: 13px;
     font-size: 25px;
 }
 .description {
-    font-size: 14px;
-    font-family: sans-serif;
-    line-height: 2;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.8;
     margin-left: 12px;
-    color: #ffffff;
+    
 }
 .list-item {
-    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
     margin-left: 10px;
     list-style-type: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 .heading-pocess{
     text-align: center;
@@ -166,6 +177,7 @@ body {
     .one-process{
         display: flex;
         flex-direction: column;
+        margin-right: 22px;
 
     }
 }
@@ -215,6 +227,9 @@ body {
     display: inline-block;
     margin-right: 10px; /* Center horizontally */
 }
+.com-logo:hover{
+    width: 192px;
+}
 .marquee{
     display: flex;
     align-items: center;
@@ -255,6 +270,11 @@ body {
     font-size: 17px;
     font-family: 'Segoe UI';
     max-width: 152px;
+}
+@media screen and (max-width: 600px) {
+    .text-manufacture{
+        max-width: 70px;
+    }
 }
 .directory-data-container {
     display: flex;

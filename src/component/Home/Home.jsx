@@ -164,12 +164,12 @@ function Home() {
 				<h1 className="buss-heading">Supporting Brands</h1>
 				<div>
 					<marquee direction="left" scrollamount="20" class="marquee">
-						<img src="https://businesssphere.info/images/24.png" class="com-logo" />
-						<img src="https://businesssphere.info/images/logo.png" class="com-logo" />
-						<img src="https://businesssphere.info/images/20.png" class="com-logo" />
-						<img src="https://businesssphere.info/images/19.png" class="com-logo" />
-						<img src="https://businesssphere.info/images/25.jpeg" class="com-logo" />
-						<img src="https://businesssphere.info/images/26.jpeg" class="com-logo" />
+						<img src="https://businesssphere.info/images/24.png" className="com-logo" />
+						<img src="https://businesssphere.info/images/logo.png" className="com-logo" />
+						<img src="https://businesssphere.info/images/20.png" className="com-logo" />
+						<img src="https://businesssphere.info/images/19.png" className="com-logo" />
+						<img src="https://businesssphere.info/images/25.jpeg" className="com-logo" />
+						<img src="https://businesssphere.info/images/26.jpeg" className="com-logo" />
 					</marquee>
 
 

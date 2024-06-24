@@ -21,8 +21,8 @@ function About() {
                     professionals come together organically, driven by a shared passion for growth and collaboration.
                 </p>
                 <p class="paragraph">With a thriving community of over 5000 interconnected individuals,
-                    Business Sphere is a testament to the power of collective synergy and shared expertise. O
-                    ur members, comprising seasoned business leaders, entrepreneurs, executives, and professionals
+                    Business Sphere is a testament to the power of collective synergy and shared expertise.
+                    Our members, comprising seasoned business leaders, entrepreneurs, executives, and professionals
                     from diverse industries, unite under a common goal: to leverage their collective knowledge and
                     resources for mutual benefit.
                 </p>

@@ -1,12 +1,13 @@
 *{
     box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
 }
 body{
 	margin: 0px;
 }
 .contact-img{
-    width: 100%;
+	width: 100%;
   height: 60vh;
   object-fit: cover;
   display: block;
@@ -23,19 +24,20 @@ body{
 }
 @media screen and (max-width: 600px) {
 	.contact-main-container{
-		margin-left: 0px;
+		margin-left: 17px;
+		margin-bottom: 13px;
 	}
 }
 .contact-heading{
-    margin: 12px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 13px;
     font-size: 32px;
+	padding-left: 10px;
 }
 .contact-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50vw;
+    width: 52vw;
     margin-left: 10px;
 }
 @media screen and (max-width: 600px) {
@@ -48,7 +50,8 @@ body{
 }
 .contact-way{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
+	margin: 10px;
 }
 .img-and-form-container{
     display: flex;
@@ -132,7 +135,7 @@ body{
 	margin: 10px;
 	padding: 10px;
 	border-radius: 5px;
-	text-align: center;
+	
 
 }
 @media screen and (max-width: 600px) {
@@ -143,11 +146,11 @@ body{
 .textarea{
 	margin: 12px;
 	border-width: 0px;
-	width: 39vw;
+	width: 37vw;
 }
 @media screen and (max-width: 600px) {
 	.textarea{
-		width: 60vw;
+		width: 63vw;
 	}
 }
 .btn-container{

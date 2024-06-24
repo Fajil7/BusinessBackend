@@ -52,12 +52,13 @@ body{
 	color: #000;
 	font-size: 32px;
 	margin-left: 112px;
+	
 }
 @media screen and (max-width: 600px) {
 	.about-1-heading{
 		font-size: 17px;
 		text-align: center;
-		margin-left: 0px;
+		margin-left: 18px;
 	}
 }
 .paragraph{
@@ -66,6 +67,7 @@ body{
 	font-size: 15px;
 	margin-left: 112px;
 	margin-bottom: 15px;
+	margin-right: 33px;
 	
 }
 @media screen and (max-width: 600px) {
@@ -73,14 +75,15 @@ body{
 		font-size: 14px;
 		margin-left: 5px;
 		margin-bottom: 8px;
-		max-width: 350px;
-		
+		max-width: 450px;
+		width: 350px;
 		padding: 5px;
 	}
 }
 .line{
 	margin-left: 112px;
 	margin-right: 112px;
+	background-color: #000;
 }
 @media screen and (max-width: 600px) {
 	.line{
@@ -91,19 +94,4 @@ body{
 .span-element{
 	font-weight: bold;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-@media screen and (max-width: 600px) {
-    .apply{
-        margin-right: 80px;
-    }
-}
-@media screen and (max-width: 600px) {
-    .colsabrate{
-        margin-left: 92px;
-    }
-}
-@media screen and (max-width: 600px) {
-	.approve{
-		margin-left: 27px;
-	}
 }

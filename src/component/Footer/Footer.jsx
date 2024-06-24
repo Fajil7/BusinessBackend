@@ -40,7 +40,7 @@ function Footer() {
 		  </div>
 		</div>
 		<div className="footer-bottom">
-		  <p>&copy; 2023-2024 BUSINESS SPHERE. DESIGNED BY MSMEDOST</p>
+		  <p className='copy-right-text'>&copy; 2023-2024 BUSINESS SPHERE. DESIGNED BY MSMEDOST</p>
 		</div>
 	  </footer>
 	)

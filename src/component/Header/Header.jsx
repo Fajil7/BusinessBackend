@@ -23,11 +23,11 @@ function Header() {
         </div>
         <div >
           <ul className=' flex gap-12 relative'>
-            <li className=' cursor-pointer'><Link to="/">Home</Link></li>
-            <li className='cursor-pointer'><Link to="/listing">Directory Listing Form</Link></li>
-            <li className='cursor-pointer'><Link to="/driectory">Directory</Link></li>
-            <li className='cursor-pointer'><Link to="/about">About</Link></li>
-            <li className='cursor-pointer'><Link to="/contact">Contact us</Link></li>
+            <li className='item-hover cursor-pointer'><Link to="/">Home</Link></li>
+            <li className='item-hover cursor-pointer'><Link to="/listing">Directory Listing Form</Link></li>
+            <li className='item-hover cursor-pointer'><Link to="/driectory">Directory</Link></li>
+            <li className='item-hover cursor-pointer'><Link to="/about">About</Link></li>
+            <li className='item-hover cursor-pointer'><Link to="/contact">Contact us</Link></li>
           </ul>
         </div>
         <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-md ">
@@ -42,11 +42,11 @@ function Header() {
             alt='logo'
           />
           <ul className='unorder-list-container' style={{ display: isToggled ? 'block' : 'none' }}>
-            <li className='item'><Link to='/'>Home</Link></li>
-            <li className='item'><Link to='/listing'>Directory Listing Form</Link></li>
-            <li className='item'><Link to='/directory'>Directory</Link></li>
-            <li className='item'><Link to='/about'>About</Link></li>
-            <li className='item'><Link to='/contact'>Contact us</Link></li>
+            <li className='item-hover'><Link to='/'>Home</Link></li>
+            <li className='item-hover'><Link to='/listing'>Directory Listing Form</Link></li>
+            <li className='item-hover'><Link to='/directory'>Directory</Link></li>
+            <li className='item-hover'><Link to='/about'>About</Link></li>
+            <li className='item-hover'><Link to='/contact'>Contact us</Link></li>
             <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-md ">
               Login
             </button>
