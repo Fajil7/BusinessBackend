@@ -37,10 +37,11 @@ function Header() {
       <div className=' h-24 w-screen mobile-hide'></div>
       <div className='mobile-view-nav-container '>
         <div>
-          <img src='https://businesssphere.info/uploads/web_photo_upload/171610104193261.png'
-            className='logo'
-            alt='logo'
-          />
+          <Link to="/">
+            <img src='https://businesssphere.info/uploads/web_photo_upload/171610104193261.png'
+              className='logo'
+              alt='logo'
+            /></Link>
           <ul className='unorder-list-container' style={{ display: isToggled ? 'block' : 'none' }}>
             <li className='item-hover'><Link to='/'>Home</Link></li>
             <li className='item-hover'><Link to='/listing'>Directory Listing Form</Link></li>

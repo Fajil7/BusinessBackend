@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './home.css'
 import TestimonialSlider from '../TestimonialSlider/Testimonial';
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../variants';
+
 
 function Home() {
 	const settings = {
@@ -28,7 +31,13 @@ function Home() {
 					<img src="https://businesssphere.info/uploads/banner/1474091916307897.jpeg" alt="img1" className='crousal-img' />
 				</div>
 			</Slider>
-			<h1 className="buss-heading">Business Directory</h1>
+			<motion.h1
+				variants={fadeIn("up", 0.2)}
+				initial="hidden"
+				whileInView={"show"}
+				viewport={{ once: false, amount: 0.3 }}
+
+				className="buss-heading">Business Directory</motion.h1>
 			<div className="directory-card">
 				<div className="cus-profile-container">
 					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
@@ -95,8 +104,22 @@ function Home() {
 					<p className="possition">Position</p>
 				</div>
 			</div>
-			<h1 className="buss-heading">About Business Sphere</h1>
-			<div className="directory-card">
+			<motion.h1
+
+				variants={fadeIn("up", 0.2)}
+				initial="hidden"
+				whileInView={"show"}
+				viewport={{ once: false, amount: 0.3 }}
+
+				className="buss-heading">About Business Sphere</motion.h1>
+			<motion.div
+
+				variants={fadeIn("up", 0.2)}
+				initial="hidden"
+				whileInView={"show"}
+				viewport={{ once: false, amount: 0.3 }}
+
+				className="directory-card">
 				<div className="about-detail-card">
 					<div className="detail-card">
 						<h1 className="abou-heading">About Us</h1>
@@ -121,9 +144,25 @@ function Home() {
 						<p className="list-item">5.<span> </span>Strengthen Bonds</p>
 					</div>
 				</div>
-			</div>
-			<h1 className='buss-heading'>Our Pocess</h1>
-			<div className='process-align-container'>
+			</motion.div>
+			<motion.h1
+
+
+				variants={fadeIn("up", 0.2)}
+				initial="hidden"
+				whileInView={"show"}
+				viewport={{ once: false, amount: 0.3 }}
+
+				className='buss-heading'>Our Pocess</motion.h1>
+			<motion.div
+
+
+				variants={fadeIn("left", 0.2)}
+				initial="hidden"
+				whileInView={"show"}
+				viewport={{ once: false, amount: 0.7 }}
+
+				className='process-align-container'>
 				<div className='one-process'>
 					<div className="process-detail-card">
 						<img
@@ -156,15 +195,23 @@ function Home() {
 						<p className="possition">Collaborate</p>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 			<div>
 				<h1 className='testimonial-heading'>Testimonials</h1>
 				<TestimonialSlider />
 			</div>
 			<div className="our-supporting-brd-contianer">
-				<h1 className="buss-heading">Supporting Brands</h1>
+				<motion.h1
+
+					variants={fadeIn("up", 0.2)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.3 }}
+
+
+					className="buss-heading">Supporting Brands</motion.h1>
 				<div>
-					<marquee direction="left" scrollamount="20" class="marquee">
+					<marquee direction="left" scrollamount="20" className="marquee">
 						<img src="https://businesssphere.info/images/24.png" className="com-logo" />
 						<img src="https://businesssphere.info/images/logo.png" className="com-logo" />
 						<img src="https://businesssphere.info/images/20.png" className="com-logo" />

@@ -70,6 +70,26 @@ class Faq extends Component {
         answer:
           'No, membership renewal is not automatic. You will be notified in advance of your membership expiry date, and you can choose to renew it as per your preference. It will be displayed under your login and even on the website in a separate section to be launched soon. However management reserves the right of renewal or admission to any event or any other thing as per the situation and cases.',
       },
+      {
+        question: 'Can I register for multiple events in advance?',
+        answer:
+          'Yes, you can register for multiple events in advance to ensure your participation. Early registration can often provide added benefits and discounts.',
+      },
+      {
+        question: 'How can I make the most of my membership with Business Sphere?',
+        answer:
+          'To maximize the benefits of your membership, actively participate in networking sessions, engage with fellow professionals, and utilize the platform to promote your business and professional achievements.',
+      },
+      {
+        question: 'Are there any restrictions on the type of businesses that can join Business Sphere?',
+        answer:
+          "No, Business Sphere is inclusive of all types and sizes of businesses. We encourage diversity and welcome entrepreneurs and professionals from all sectors. Of course, those products or services that are not permitted or banned in Bharat, anything that is not allowed by Bharat Sarkar and illegal is strictly restricted. It is a forum for Business people to Business people so chain marketing and other that is not acceptable to the Business community is warned with a note if it's brought to notice b"
+      },
+      {
+        question: 'Can I share my success stories or achievements on the Business Sphere website?',
+        answer:
+          'Absolutely, we encourage members to share their success stories and achievements. Your success stories can inspire others and contribute to a thriving business community. For that you need to send this to the admin and it will be uploaded on the website by the support team managing the website and social media.',
+      },
     ];
 
     return (
@@ -86,7 +106,7 @@ class Faq extends Component {
           {questions.map((item, index) => (
             <div key={index} className="question-wrapper">
               <div className="question-container">
-                <p className="question">{item.question}</p>
+                <p onClick={() => this.toggleAnswer(index)} className="question cursor-pointer">{item.question}</p>
                 <button
                   className="plus"
                   onClick={() => this.toggleAnswer(index)}

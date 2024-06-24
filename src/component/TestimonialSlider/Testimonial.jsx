@@ -47,7 +47,7 @@ const TestimonialSlider = () => {
                   services I am availing from members of Business Sphere. This is really useful and helpful.
                 </p>
                 <div className='name-position-container'>
-                  <h4 className='sanjay'>Sanjay Jha</h4>
+                  <h4 className='sanjay'>-Sanjay Jha</h4>
                   <p className='sanjay-text'>MSMEDOST and Simplified Management Solutions</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ const TestimonialSlider = () => {
                 <p> I am Shubham Jain from S.P. Hosiery and I am satisfied with this forum. I have got Business connects and referrals and got few Businesses too. Thanks to the member of the forum and I am happy with forums activities.
                 </p>
                 <div className='name-position-container'>
-                  <h4 className='sanjay'>Shubham Jain</h4>
+                  <h4 className='sanjay'>-Shubham Jain</h4>
                   <p className='sanjay-text'>S.P. Jain Hosiery</p>
                 </div>
               </div>

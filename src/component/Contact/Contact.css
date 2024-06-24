@@ -53,6 +53,9 @@ body{
     font-size: 17px;
 	margin: 10px;
 }
+.icon-footer{
+	height: 22px;
+}
 .img-and-form-container{
     display: flex;
     padding: 10px;
@@ -84,8 +87,9 @@ body{
 	background-color: rgb(218, 231, 227);
 	width: 20vw;
 	margin: 10px;
-	padding: 15px;
+	padding: 10px;
 	border-radius: 5px;
+	
 }
 @media screen and (max-width: 600px) {
 	.input-container{
@@ -113,6 +117,7 @@ body{
 	border-width: 0px;
 	padding: 8px;
     border-width: 0px;
+	margin-bottom: 17px;
 }
 @media screen and (max-width: 600px) {
 	.input{
