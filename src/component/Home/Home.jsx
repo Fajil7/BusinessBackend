@@ -154,16 +154,18 @@ function Home() {
 				viewport={{ once: false, amount: 0.3 }}
 
 				className='buss-heading'>Our Pocess</motion.h1>
-			<motion.div
-
-
-				variants={fadeIn("left", 0.2)}
+			<div className='process-align-container'>
+				<motion.div 
+				
+				
+				variants={fadeIn("right", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
 				viewport={{ once: false, amount: 0.7 }}
 
-				className='process-align-container'>
-				<div className='one-process'>
+				
+				
+				className='one-process'>
 					<div className="process-detail-card">
 						<img
 							src="https://businesssphere.info/images/img-1.png"
@@ -178,8 +180,18 @@ function Home() {
 						/>
 						<p className="possition">Review</p>
 					</div>
-				</div>
-				<div className='one-process'>
+				</motion.div>
+				<motion.div 
+				
+				
+				variants={fadeIn("left", 0.2)}
+				initial="hidden"
+				whileInView={"show"}
+				viewport={{ once: false, amount: 0.7 }}
+
+				
+				
+				className='one-process'>
 					<div className="process-detail-card">
 						<img
 							src="https://businesssphere.info/images/img-3.png"
@@ -194,10 +206,19 @@ function Home() {
 						/>
 						<p className="possition">Collaborate</p>
 					</div>
-				</div>
-			</motion.div>
+				</motion.div>
+			</div>
 			<div>
-				<h1 className='testimonial-heading'>Testimonials</h1>
+				<motion.h1
+
+
+					variants={fadeIn("up", 0.2)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.3 }}
+
+
+					className='testimonial-heading'>Testimonials</motion.h1>
 				<TestimonialSlider />
 			</div>
 			<div className="our-supporting-brd-contianer">
@@ -329,6 +350,7 @@ function Home() {
 					</div>
 				</div>
 			</div>
+
 		</section>
 	)
 }

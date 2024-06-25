@@ -9,6 +9,7 @@ body {
     overflow-x: hidden; 
 }
 
+
 .heading {
     margin-top: 20px;
     color: red;
@@ -18,6 +19,12 @@ body {
     width: 100%;
     height: 50vw;
     object-fit: cover;
+    display: block;
+}
+@media screen and (max-width: 600px) {
+    .crousal-img{
+        width: 100%;
+    }
 }
 
 .buss-heading {

@@ -12,7 +12,7 @@ function Contact() {
             <div>
                 <img
                     src="https://img.freepik.com/premium-photo/close-up-contact-us-word_352439-2440.jpg?w=900"
-                    alt="about"
+                    alt="Contact"
                     className="contact-img"
                 />
             </div>

@@ -34,8 +34,8 @@ function Footer() {
 		  </div>
 		  <div className="footer-section">
 			<h4 className='mobile-view-margin'>Contact Us</h4>
-			<p className='mobile-view-margin flex  items-center'><IoMdMail className='icon-footer'/> sskjha2016@gmail.com</p>
-			<p className='mobile-view-margin flex  items-center '><FaPhoneAlt className='icon-footer'/> +91-85 82 84 84 34</p>
+			<p className='mobile-view-margin flex  items-center'><IoMdMail className='icon-footer'/> <a href="mailto: sskjha2016@gmail.com">sskjha2016@gmail.com</a></p>
+			<p className='mobile-view-margin flex  items-center '><FaPhoneAlt className='icon-footer'/> <a href='tel: +91-85 82 84 84 34'>+91-85 82 84 84 34</a></p>
 			<p className="mobile-view-margin flex  items-center"><FaLocationDot className='icon-footer'/> Kolkata 700001</p>
 		  </div>
 		</div>
