@@ -170,7 +170,7 @@ function About() {
                             viewport={{ once: false, amount: 0.3 }}
                 
                 
-                className="paragraph"><span class="span-element">Guidance from Leaders: </span> Gain insights and vision from the city's renowned Business Tycoons and Conglomerates. Their guidance
+                className="paragraph"><span className="span-element">Guidance from Leaders: </span> Gain insights and vision from the city's renowned Business Tycoons and Conglomerates. Their guidance
                     can significantly influence your business journey.
                 </motion.p>
                 <motion.p 

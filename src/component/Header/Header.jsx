@@ -25,7 +25,7 @@ function Header() {
           <ul className=' flex gap-12 relative'>
             <li className='item-hover cursor-pointer'><Link to="/">Home</Link></li>
             <li className='item-hover cursor-pointer'><Link to="/listing">Directory Listing Form</Link></li>
-            <li className='item-hover cursor-pointer'><Link to="/driectory">Directory</Link></li>
+            <li className='item-hover cursor-pointer'><Link to="/directory">Directory</Link></li>
             <li className='item-hover cursor-pointer'><Link to="/about">About</Link></li>
             <li className='item-hover cursor-pointer'><Link to="/contact">Contact us</Link></li>
           </ul>
@@ -55,12 +55,13 @@ function Header() {
 
         </div>
         {isToggled ? (
-        <RxCross1  className='cross-icon' onClick={onShowList} />
-      ) : (
-        <IoReorderThreeOutline className='icon' onClick={onShowList} />
-      )}
+          <RxCross1 className='cross-icon' onClick={onShowList} />
+        ) : (
+          <IoReorderThreeOutline className='icon' onClick={onShowList} />
+        )}
       </div>
-    
+      
+
     </>
   )
 }

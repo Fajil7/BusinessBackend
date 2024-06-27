@@ -57,17 +57,7 @@ body {
     }
 }
 
-.cus-profile-container {
-    background-color: rgb(218, 231, 227);
-    width: 270px;
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    border-radius: 5px;
-}
+
 
 .profile {
     width: 120px;

@@ -1,10 +1,85 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios';
 import './listing.css'
-import ReCAPTCHA from 'react-google-recaptcha';
+//import ReCAPTCHA from 'react-google-recaptcha';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants';
 
+
 function Listing() {
+    const [form, setForm] = useState({
+        name: '',
+        gender: '',
+        whatsappno: '',
+        alternateno: '',
+        email: '',
+        dob: '',
+        doma: '',
+        blood: '',
+        interesrarea: '',
+        businessname: '',
+        businesscategory: '',
+        nob: '',
+        bs: '',
+        ba: '',
+        pincode: '',
+        locality: '',
+        city: '',
+        wlink: '',
+        textarea: '',
+        yourphoto: '',
+        yourlogo: '',
+        chexkbox: ''
+
+    })
+
+    const [setErrorMessage, setSubmitMessage] = useState('');
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setForm({
+            ...form,
+            [name]: value
+        })
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const res = await axios.post('http://localhost:5000/submit', form);
+            console.log('Response:', res);
+            setSubmitMessage(res.data);
+            setForm({
+                name: '',
+                gender: '',
+                whatsappno: '',
+                alternateno: '',
+                email: '',
+                dob: '',
+                doma: '',
+                blood: '',
+                interesrarea: '',
+                businessname: '',
+                businesscategory: '',
+                nob: '',
+                bs: '',
+                ba: '',
+                pincode: '',
+                locality: '',
+                city: '',
+                wlink: '',
+                textarea: '',
+                yourphoto: '',
+                yourlogo: '',
+                chexkbox:''
+            })
+
+        } catch (err) {
+            console.error('Error submitting form:', err);
+            setErrorMessage('Failed to submit form');
+        }
+    }
+
     return (
         <div>
             <div>
@@ -28,7 +103,7 @@ function Listing() {
                     <h3 className="text">Please Fill the Form Carefully.</h3>
                     <p className='text-2'>Informations shared by you is important for your Credential & Directory listing.</p>
                 </motion.div>
-                <form className="listing-form-container">
+                <form className="listing-form-container" onSubmit={handleSubmit}>
                     <div className="two-list-input-container">
                         <motion.div
 
@@ -41,7 +116,8 @@ function Listing() {
                             className="label-input-container">
                             <label className="list-label">Name*</label>
                             <br />
-                            <input type="text" required className="list-input" />
+                            <input type="text" required className="list-input" name='name' value={form.name}
+                                onChange={handleChange} />
                         </motion.div>
                         <motion.div
 
@@ -54,7 +130,8 @@ function Listing() {
                             className="label-input-container">
                             <label className="list-label">Gender*</label>
                             <br />
-                            <select className="list-input">
+                            <select className="list-input" name='gender' value={form.gender}
+                                onChange={handleChange}>
                                 <option className="option-element"></option>
                                 <option className="option-element">Male</option>
                                 <option className="option-element">Female</option>
@@ -73,7 +150,8 @@ function Listing() {
                             className="label-input-container">
                             <label className="list-label">WhatsApp No.*</label>
                             <br />
-                            <input type="text" required className="list-input" />
+                            <input type="text" required className="list-input" name='whatsappno' value={form.whatsappno}
+                                onChange={handleChange} />
                         </motion.div>
                         <motion.div
 
@@ -86,67 +164,72 @@ function Listing() {
                             className="label-input-container">
                             <label className="unrequired-label">Alternate Contact No.</label>
                             <br />
-                            <input type="text" required className="list-input" />
+                            <input type="text"  className="list-input" name='alternateno' value={form.alternateno}
+                                onChange={handleChange} />
                         </motion.div>
                     </div>
-                    <motion.div 
-                    
-                    variants={fadeIn("up", 0.2)}
-                            initial="hidden"
-                            whileInView={"show"}
-                            viewport={{ once: false, amount: 0.3 }}
-                    
-                    
-                    className="single-frame-input-container">
+                    <motion.div
+
+                        variants={fadeIn("up", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.3 }}
+
+
+                        className="single-frame-input-container">
                         <div className="single-input-container">
                             <label className="unrequired-label">Email ID</label>
                             <br />
-                            <input type="text" required className="single-list-input" />
+                            <input type="text"  className="single-list-input" name='email' value={form.email}
+                                onChange={handleChange} />
                         </div>
                     </motion.div>
                     <div className="two-list-input-container">
-                        <motion.div 
-                        
-                        variants={fadeIn("right", 0.2)}
+                        <motion.div
+
+                            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        
-                        className="label-input-container">
+
+
+
+                            className="label-input-container">
                             <label className="list-label">Date of Birth*</label>
                             <br />
-                            <input type="date" required className="list-input" />
+                            <input type="date" required className="list-input" name='dob' value={form.dob}
+                                onChange={handleChange} />
                         </motion.div>
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("left", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        className="label-input-container">
+
+                            className="label-input-container">
                             <label className="unrequired-label">Date of Marriage Anniversary</label>
                             <br />
-                            <input type="date" required className="list-input" />
+                            <input type="date"  className="list-input" name='doma' value={form.doma}
+                                onChange={handleChange} />
                         </motion.div>
                     </div>
                     <div className="two-list-input-container">
-                        <motion.div 
-                        
-                        variants={fadeIn("right", 0.2)}
+                        <motion.div
+
+                            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        
-                        className="blood-input-container">
+
+
+
+                            className="blood-input-container">
                             <label className="list-label">Blood Group*</label>
                             <br />
-                            <select className="blood-input">
+                            <select required className="blood-input" name='blood' value={form.blood}
+                                onChange={handleChange}>
                                 <option></option>
                                 <option className="option-element">A+</option>
                                 <option className="option-element">A-</option>
@@ -158,19 +241,20 @@ function Listing() {
                                 <option className="option-element">O-</option>
                             </select>
                         </motion.div>
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("left", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
 
-                        className="area-input-container">
+
+                            className="area-input-container">
                             <label className="unrequired-label">Interest Area</label>
                             <br />
-                            <select className="area-input">
+                            <select className="area-input" name='interesrarea' value={form.interesrarea}
+                                onChange={handleChange}>
                                 <option></option>
                                 <option className="option-element">Business Only</option>
                                 <option className="option-element">Charity and Other National/Social Cause</option>
@@ -184,33 +268,35 @@ function Listing() {
                         </motion.div>
                     </div>
                     <div className="two-list-input-container">
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("right", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="label-input-container">
+
+
+                            className="label-input-container">
                             <label className="unrequired-label">Business Entity Name</label>
                             <br />
-                            <input type="text" className="list-input" />
+                            <input type="text" className="list-input" name='businessname' value={form.businessname}
+                                onChange={handleChange} />
                         </motion.div>
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("left", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="label-input-container">
+
+
+                            className="label-input-container">
                             <label className="list-label">Business Category*</label>
                             <br />
-                            <select className="list-input">
+                            <select required className="list-input" name='businesscategory' value={form.businesscategory}
+                                onChange={handleChange}>
                                 <option className="option-element"></option>
                                 <option className="option-element">Accounting Services</option>
                                 <option className="option-element">Accupuncture & Accupressure</option>
@@ -473,19 +559,20 @@ function Listing() {
                         </motion.div>
                     </div>
                     <div className="two-list-input-container">
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("right", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="label-input-container">
+
+
+                            className="label-input-container">
                             <label className="list-label">Nature of Business*</label>
                             <br />
-                            <select className="list-input">
+                            <select required className="list-input" name='nob' value={form.nob}
+                                onChange={handleChange}>
                                 <option className="option-element"></option>
                                 <option className="option-element">Manufacturer </option>
                                 <option className="option-element">Retail  </option>
@@ -494,19 +581,20 @@ function Listing() {
                                 <option className="option-element">Other</option>
                             </select>
                         </motion.div>
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("left", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="label-input-container">
+
+
+                            className="label-input-container">
                             <label className="list-label">Business Segment*</label>
                             <br />
-                            <select className="list-input">
+                            <select required className="list-input" name='bs' value={form.bs}
+                                onChange={handleChange}>
                                 <option className="option-element"></option>
                                 <option className="option-element">Advertising & Marketing </option>
                                 <option className="option-element">Agriculture</option>
@@ -540,50 +628,53 @@ function Listing() {
                             </select>
                         </motion.div>
                     </div>
-                    <motion.div 
-                    
-                    
-                    variants={fadeIn("up", 0.2)}
+                    <motion.div
+
+
+                        variants={fadeIn("up", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.3 }}
+
+
+                        className="single-frame-input-container">
+                        <div className="single-input-container">
+                            <label className="list-label">Business Address*</label>
+                            <br />
+                            <input type="text" required className="single-list-input" name='ba' value={form.ba}
+                                onChange={handleChange} />
+                        </div>
+                    </motion.div>
+                    <div className="two-list-input-container">
+                        <motion.div
+
+
+                            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
 
-                    
-                    className="single-frame-input-container">
-                        <div className="single-input-container">
-                            <label className="list-label">Business Address*</label>
-                            <br />
-                            <input type="text" required className="single-list-input" />
-                        </div>
-                    </motion.div>
-                    <div className="two-list-input-container">
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("right", 0.2)}
-                            initial="hidden"
-                            whileInView={"show"}
-                            viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="blood-input-container">
+
+                            className="blood-input-container">
                             <label className="list-label">PIN Code*</label>
                             <br />
-                            <input type="text" className="blood-input" />
+                            <input required type="text" className="blood-input" name='pincode' value={form.pincode}
+                                onChange={handleChange} />
                         </motion.div>
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("left", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="area-input-container">
+
+
+                            className="area-input-container">
                             <label className="list-label">Locality*</label>
                             <br />
-                            <select className="area-input">
+                            <select required className="area-input" name='locality' value={form.locality}
+                                onChange={handleChange}>
                                 <option></option>
                                 <option className="option-element">Central Kolkata (MG Metro-Netaji Bhawan-Howrah-Sealdah) </option>
                                 <option className="option-element">South Kolkata Metro Area (Hazra to New Garia) </option>
@@ -600,18 +691,19 @@ function Listing() {
                         </motion.div>
                     </div>
                     <div className="two-list-input-container">
-                        <motion.div 
-                        
-                        variants={fadeIn("right", 0.2)}
+                        <motion.div
+
+                            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="label-input-container">
+
+
+                            className="label-input-container">
                             <label className="list-label">City*</label>
                             <br />
-                            <select className="list-input">
+                            <select required className="list-input" name='city' value={form.city}
+                                onChange={handleChange}>
                                 <option className="option-element"></option>
                                 <option className="option-element">Kolkata</option>
                                 <option className="option-element">Near Kolkata(within WB)</option>
@@ -619,79 +711,83 @@ function Listing() {
                                 <option className="option-element">other</option>
                             </select>
                         </motion.div>
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("lrft", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("lrft", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        
-                        className="label-input-container">
+
+
+
+                            className="label-input-container">
                             <label className="unrequired-label">Website Link</label>
                             <br />
-                            <input type="text" required className="list-input" />
+                            <input type="text"  className="list-input" name='wlink' value={form.wlink}
+                                onChange={handleChange} />
                         </motion.div>
                     </div>
-                    <motion.div 
-                    
-                    
-                    variants={fadeIn("up", 0.2)}
-                            initial="hidden"
-                            whileInView={"show"}
-                            viewport={{ once: false, amount: 0.3 }}
-                    
-                    
-                    
-                    className="single-frame-input-container">
+                    <motion.div
+
+
+                        variants={fadeIn("up", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.3 }}
+
+
+
+                        className="single-frame-input-container">
                         <div className="single-input-container">
                             <label className="unrequired-label">Business Description (Maximum 300 characters including spaces & special characters)</label>
                             <br />
-                            <textarea rows="6" className="text-area" placeholder="Max. characters with space" cols="50"></textarea>
+                            <textarea rows="6" className="text-area" placeholder="Max. characters with space" cols="50" name='textarea' value={form.textarea}
+                                onChange={handleChange}></textarea>
                         </div>
                     </motion.div>
                     <div className="two-list-input-container">
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("right", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("right", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="label-input-container">
+
+
+                            className="label-input-container">
                             <label className="list-label">Upload Your Photo*<span className="required-element">(Upload JPEG, JPG or PNG file and Image size less than 2 MB. Direct Mobile camera photos size may exceed the size)</span></label>
                             <br />
-                            <input type="file" accept="image/jpg, image/png, image/jpeg" required className="list-input" />
+                            <input type="file" accept="image/jpg, image/png, image/jpeg" required className="list-input" name='yourphoto' value={form.yourphoto}
+                                onChange={handleChange} />
                         </motion.div>
-                        <motion.div 
-                        
-                        
-                        variants={fadeIn("left", 0.2)}
+                        <motion.div
+
+
+                            variants={fadeIn("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="label-input-container">
+
+
+                            className="label-input-container">
                             <label className="unrequired-label">Logo Upload<span className="required-element">(Upload a JPEG, JPG or PNG file)</span></label>
                             <br />
-                            <input type="file" accept="image/jpg, image/png, image/jpeg" className="list-input" />
+                            <input type="file" accept="image/jpg, image/png, image/jpeg" className="list-input" name='yourlogo' value={form.yourlogo}
+                                onChange={handleChange} />
                         </motion.div>
                     </div>
-                    <motion.div 
-                    
-                    
-                    variants={fadeIn("right", 0.2)}
-                            initial="hidden"
-                            whileInView={"show"}
-                            viewport={{ once: false, amount: 0.3 }}
-                    
-                    
-                    className="captcha-container">
+                    <motion.div
+
+
+                        variants={fadeIn("right", 0.2)}
+                        initial="hidden"
+                        whileInView={"show"}
+                        viewport={{ once: false, amount: 0.3 }}
+
+
+                        className="captcha-container">
                         <div>
                             <div className="captcha-input">
                                 <p>Captcha</p>
@@ -708,16 +804,16 @@ function Listing() {
                                 <input type="text" className="captcha-input-2" placeholder="Enter Captch Code" />
                             </div>
                         </div>
-                        <motion.div 
-                        
-                        variants={fadeIn("left", 0.2)}
+                        <motion.div
+
+                            variants={fadeIn("left", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        
-                        className="qr-img-container">
+
+
+
+                            className="qr-img-container">
                             <img className="gpay-qr"
                                 src="https://businesssphere.info/images/GpayQR.jpeg"
                             />
@@ -725,23 +821,23 @@ function Listing() {
                         </motion.div>
                     </motion.div>
                     <div className="checkbox-and-condition-container">
-                        <motion.div 
-                        
-                        variants={fadeIn("up", 0.2)}
+                        <motion.div
+
+                            variants={fadeIn("up", 0.2)}
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                        
-                        
-                        className="checkbox-input-container">
-                            <input type="checkbox" className="checkbox-input" required />
+
+
+                            className="checkbox-input-container">
+                            <input type="checkbox" className="checkbox-input" required name='chexkbox' value={form.chexkbox} onChange={handleChange}/>
                             <p>
                                 I accept all the Terms & Conditions framed to manage the Forum & any changes therein. I have Paid/ Ready to pay Rs. 150 as Annual Website Listing Fees for Directory Listing and maintenance of Website. Form once filled will not be editable. Backend and support team to be requested for any changes, I accept it to be nominally charged.
                             </p>
                         </motion.div>
                     </div>
                     <div className="btn-container">
-                        <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-md ">
+                        <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-md " type='submit'>
                             Submit
                         </button>
                     </div>

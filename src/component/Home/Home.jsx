@@ -6,6 +6,7 @@ import './home.css'
 import TestimonialSlider from '../TestimonialSlider/Testimonial';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants';
+import Listedmember from '../Listedmember/Listedmember';
 
 
 function Home() {
@@ -38,72 +39,7 @@ function Home() {
 				viewport={{ once: false, amount: 0.3 }}
 
 				className="buss-heading">Business Directory</motion.h1>
-			<div className="directory-card">
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-				<div className="cus-profile-container">
-					<img src="https://img.freepik.com/premium-photo/user-icon-glossy-blue_335552-1305.jpg?w=740"
-						alt="profile"
-						className="profile"
-					/>
-					<p className="name">Name</p>
-					<p className="possition">Position</p>
-				</div>
-			</div>
+			<Listedmember />
 			<motion.h1
 
 				variants={fadeIn("up", 0.2)}
@@ -121,13 +57,22 @@ function Home() {
 
 				className="directory-card">
 				<div className="about-detail-card">
-					<div className="detail-card">
+					<motion.div
+
+
+						variants={fadeIn("right", 0.2)}
+						initial="hidden"
+						whileInView={"show"}
+						viewport={{ once: false, amount: 0.3 }}
+
+
+						className="detail-card">
 						<h1 className="abou-heading">About Us</h1>
 						<p className="description">
 							Gratitude for the welcome to Business Sphere! a thriving networking
 							community for seasoned business professionals in the vibrant city of Kolkata.
 						</p>
-					</div>
+					</motion.div>
 					<div className="detail-card">
 						<h1 className="abou-heading">Our Mission</h1>
 						<p className="description">
@@ -135,14 +80,22 @@ function Home() {
 							empower and connect the experienced and dynamic business minds of Kolkata.
 						</p>
 					</div>
-					<div className="detail-card">
+					<motion.div
+
+
+						variants={fadeIn("left", 0.2)}
+						initial="hidden"
+						whileInView={"show"}
+						viewport={{ once: false, amount: 0.3 }}
+
+						className="detail-card">
 						<h1 className="abou-heading">Why Choose Us</h1>
 						<p className="list-item">1.<span> </span> Exclusive Networking</p>
 						<p className="list-item">2.<span> </span>Guidance from Leaders</p>
 						<p className="list-item">3.<span> </span>Recognition and Awards</p>
 						<p className="list-item">4.<span> </span>Social Responsibility</p>
 						<p className="list-item">5.<span> </span>Strengthen Bonds</p>
-					</div>
+					</motion.div>
 				</div>
 			</motion.div>
 			<motion.h1
@@ -155,17 +108,17 @@ function Home() {
 
 				className='buss-heading'>Our Pocess</motion.h1>
 			<div className='process-align-container'>
-				<motion.div 
-				
-				
-				variants={fadeIn("right", 0.2)}
-				initial="hidden"
-				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				<motion.div
 
-				
-				
-				className='one-process'>
+
+					variants={fadeIn("right", 0.2)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.7 }}
+
+
+
+					className='one-process'>
 					<div className="process-detail-card">
 						<img
 							src="https://businesssphere.info/images/img-1.png"
@@ -181,17 +134,17 @@ function Home() {
 						<p className="possition">Review</p>
 					</div>
 				</motion.div>
-				<motion.div 
-				
-				
-				variants={fadeIn("left", 0.2)}
-				initial="hidden"
-				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				<motion.div
 
-				
-				
-				className='one-process'>
+
+					variants={fadeIn("left", 0.2)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.7 }}
+
+
+
+					className='one-process'>
 					<div className="process-detail-card">
 						<img
 							src="https://businesssphere.info/images/img-3.png"

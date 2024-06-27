@@ -8,27 +8,32 @@ import About from './component/About/About';
 import Contact from './component/Contact/Contact';
 import Faq from './component/Faq/Faq';
 import Listing from './component/Listing/Listing';
+import Directory from './component/Directory/Directory';
+
 
 
 
 function App() {
   return (
     <>
+    
       <Router>
         <Header/>
         <Routes>
+        
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/faq' element={<Faq/>}/>
           <Route path='/listing' element={<Listing/>}/>
+          <Route path='/directory' element={<Directory/>}/>
           
         </Routes>
         
-        
+       
         <Footer/>
-        
       </Router>
+      
     </>
   )
 }

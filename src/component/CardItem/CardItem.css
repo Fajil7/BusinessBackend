@@ -1,0 +1,61 @@
+.card-profile {
+    width: 120px;
+    margin-top: 19px;
+}
+
+@media screen and (max-width: 600px) {
+    .card-profile {
+        width: 80px;
+    }
+}
+.name-positon-container{
+    margin-top: 14px;
+    text-align: center;
+}
+
+.listed-member-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+@media screen and (max-width: 430px) {
+    .listed-member-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.cus-profile-container {
+    background-color: rgb(218, 231, 227);
+    width: 270px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 14px 0 black;
+    
+}
+.cus-profile-container:hover{
+    height: 290px;
+    width: 290px;
+}
+.view-more-btn{
+    height: 33px;
+    width: 86px;
+    border-width: 0px;
+    border-radius: 6px;
+    background-color: rgb(211, 224, 17);
+    color: #fff;
+    margin: 10px;
+    
+}
+
+.view-more-btn:hover{
+    background-color: rgba(0, 0, 255, 0.877);
+}

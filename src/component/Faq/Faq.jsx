@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './Faq.css';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../variants';
+
 
 class Faq extends Component {
   state = {
@@ -106,7 +109,17 @@ class Faq extends Component {
           {questions.map((item, index) => (
             <div key={index} className="question-wrapper">
               <div className="question-container">
-                <p onClick={() => this.toggleAnswer(index)} className="question cursor-pointer">{item.question}</p>
+                <motion.p onClick={() => this.toggleAnswer(index)} 
+                
+                
+                variants={fadeIn("up", 0.2)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                
+                
+                
+                className="question cursor-pointer">{item.question}</motion.p>
                 <button
                   className="plus"
                   onClick={() => this.toggleAnswer(index)}
