@@ -1,6 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import CardItem from '../CardItem/CardItem';
+import './listedmember.css'
 
 
 
@@ -20,19 +21,11 @@ function Listedmember() {
     }, []);
 
     return (
-        <>
-        
-            <div className="directory-card">
-
-                {error && <p style={{ color: 'red' }}>{error}</p>}
-                <ul>
-                    {users.map(eachCard => (
-                        <CardItem cardDetails={eachCard} key={eachCard.id} />
-                    ))}
-                </ul>
-                
-            </div>
-        </>
+        <ul className='listed-member-ul-list-container'>
+            {users.map(eachCard => (
+                <CardItem cardDetails={eachCard} key={eachCard.id} />
+            ))}
+        </ul>
     );
 }
 

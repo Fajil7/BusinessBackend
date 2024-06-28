@@ -39,7 +39,7 @@ function Home() {
 				viewport={{ once: false, amount: 0.3 }}
 
 				className="buss-heading">Business Directory</motion.h1>
-			<Listedmember />
+			<div><Listedmember /></div>
 			<motion.h1
 
 				variants={fadeIn("up", 0.2)}
