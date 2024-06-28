@@ -21,6 +21,7 @@ function Listedmember() {
 
     return (
         <>
+        
             <div className="directory-card">
 
                 {error && <p style={{ color: 'red' }}>{error}</p>}
@@ -29,6 +30,7 @@ function Listedmember() {
                         <CardItem cardDetails={eachCard} key={eachCard.id} />
                     ))}
                 </ul>
+                
             </div>
         </>
     );

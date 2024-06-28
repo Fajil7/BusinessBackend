@@ -51,7 +51,7 @@ function Contact() {
         <div>
             <div>
                 <img
-                    src="https://img.freepik.com/premium-photo/close-up-contact-us-word_352439-2440.jpg?w=900"
+                    src="https://img.freepik.com/premium-photo/close-up-contact-us-word_352439-2440.jpg?w=740"
                     alt="Contact"
                     className="contact-img"
                 />

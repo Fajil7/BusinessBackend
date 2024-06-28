@@ -41,6 +41,11 @@
     box-shadow: 0 0 14px 0 black;
     
 }
+@media screen and (max-width: 600px) {
+    .cus-profile-container{
+        width: 240px;
+    }
+}
 .cus-profile-container:hover{
     height: 290px;
     width: 290px;
@@ -58,4 +63,12 @@
 
 .view-more-btn:hover{
     background-color: rgba(0, 0, 255, 0.877);
+}
+@media screen and (max-width: 600px) {
+    .card-name{
+        font-size: 16px;
+    }
+    .card-possition{
+        font-size: 16px;
+    }
 }

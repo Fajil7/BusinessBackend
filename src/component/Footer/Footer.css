@@ -101,7 +101,11 @@
   .footer-bottom p {
     margin: 0;
   }
-  .link-item{
+  .fotter-link-item{
+    text-decoration: none;
+  }
+  .fotter-link-item:hover{
+    color: rgb(212, 212, 54);
     text-decoration: none;
   }
   .mobile-view-margin{

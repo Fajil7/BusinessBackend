@@ -19,16 +19,16 @@ function Footer() {
 			<h4 className='h4-heading mobile-view-margin'>Useful Links</h4>
 			<div className='footer-items'>
 			<ul className='mobile-view-margin'>
-			  <li><Link to="/" className='link-item'>Home</Link></li>
-			  <li><Link to="/about" className='link-item'>About</Link></li>
-			  <li><Link>Directory</Link></li>
-			  <li><Link to="/contact" className='link-item'>Contact us</Link></li>
+			  <li><Link to="/" className='fotter-link-item'>Home</Link></li>
+			  <li><Link to="/about" className='fotter-link-item'>About</Link></li>
+			  <li><Link to="/directory" className='fotter-link-item'>Directory</Link></li>
+			  <li><Link to="/contact" className='fotter-link-item'>Contact us</Link></li>
 			</ul>
 			<ul className='secound-item-container mobile-view-margin'>
-			  <li><Link to="/faq" className='link-item'>FAQ</Link></li>
-			  <li><Link to="/listing" className='link-item'>Listing Form</Link></li>
-			  <li><Link to="/about" className='link-item'>Our Process</Link></li>
-			  <li><Link to="/" className='link-item'>Why Choose Us</Link></li>
+			  <li><Link to="/faq" className='fotter-link-item'>FAQ</Link></li>
+			  <li><Link to="/listing" className='fotter-link-item'>Listing Form</Link></li>
+			  <li><Link to="/about" className='fotter-link-item'>Our Process</Link></li>
+			  <li><Link to="/about" className='fotter-link-item'>Why Choose Us</Link></li>
 			</ul>
 			</div>
 		  </div>

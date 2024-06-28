@@ -9,6 +9,7 @@ import Contact from './component/Contact/Contact';
 import Faq from './component/Faq/Faq';
 import Listing from './component/Listing/Listing';
 import Directory from './component/Directory/Directory';
+import Listedetail from './component/Listedetail/Listedetail';
 
 
 
@@ -27,7 +28,8 @@ function App() {
           <Route path='/faq' element={<Faq/>}/>
           <Route path='/listing' element={<Listing/>}/>
           <Route path='/directory' element={<Directory/>}/>
-          
+          <Route path='/forms/:id' element={<Listedetail/>}/>
+
         </Routes>
         
        

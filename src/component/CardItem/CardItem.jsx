@@ -3,14 +3,16 @@ import './CardItem.css'
 
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants';
+import { Link } from 'react-router-dom';
 
 
 const CardItem = (props) => {
     const { cardDetails } = props
-    const { name, businesscategory, yourphoto } = cardDetails
+    const {id, name, businesscategory, yourphoto } = cardDetails
 
     return (
         <li>
+           
             <div className='listed-member-card'>
                 <motion.div
 
@@ -28,11 +30,13 @@ const CardItem = (props) => {
                     <div className='name-positon-container'>
                         <p className="card-name">{name}</p>
                         <p className="card-possition">{businesscategory}</p>
+                        <p className="card-possition">{id}</p>
                     </div>
-                    <button className='view-more-btn'>View More</button>
+                    <Link to={`/forms/${id}`}><button className='view-more-btn'>View More</button></Link>
                 </motion.div>
                 
             </div>
+    
             
         </li>
     )
