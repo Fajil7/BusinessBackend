@@ -63,7 +63,7 @@ function Contact() {
                 viewport={{ once: false, amount: 0.3 }}
                 className="contact-main-container"
             >
-                <h1 className="contact-heading">Contact</h1>
+                <h1 className="contact-heading">Contact Us</h1>
                 <div className="contact-container">
                     <p className="contact-way flex items-center"><FaPhoneAlt className='icon-footer' /> +91-85 82 84 84 34</p>
                     <p className="contact-way flex items-center"><IoMdMail className='icon-footer' /> sskjha2016@gmail.com</p>

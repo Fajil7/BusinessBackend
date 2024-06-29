@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <>
-      <div className='laptop-view  w-screen h-24 bg-gray-200 fixed z-20'>
+      <div className='laptop-view  w-screen h-24  fixed z-20'>
         <div className='logo-contianer'>
           <Link to="/">
             <img src='https://businesssphere.info/uploads/web_photo_upload/171610104193261.png'

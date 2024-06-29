@@ -5,3 +5,12 @@ body {
   overflow-x: hidden;
  
 }
+.whatsapp-icon{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  z-index: 100;
+}

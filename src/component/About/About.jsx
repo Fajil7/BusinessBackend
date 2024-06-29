@@ -33,7 +33,7 @@ function About() {
                             viewport={{ once: false, amount: 0.3 }}
                 
                 
-                className="about-1-heading">About</motion.h1>
+                className="about-1-heading">About Us</motion.h1>
                 <motion.p 
                 
                 
@@ -326,7 +326,7 @@ function About() {
                             viewport={{ once: false, amount: 0.3 }}
                 
                 
-                className="about-1-heading">Values</motion.h1>
+                className="about-1-heading">Values:</motion.h1>
                 <motion.ol
                 
                 
@@ -336,11 +336,11 @@ function About() {
                             viewport={{ once: false, amount: 0.3 }}
                 
                 >
-                    <li className="paragraph"><span className="span-element">Collaboration:</span> We believe in the power of working together, where diverse talents and ideas converge to create extraordinary outcomes.</li>
-                    <li className="paragraph"> <span className="span-element">Networking:</span> We foster a community where meaningful connections are formed, leading to fruitful relationships and mutual growth.</li>
-                    <li className="paragraph"><span className="span-element">Innovation:</span> We encourage forward-thinking and creativity, aiming to push the boundaries of traditional business practices.</li>
-                    <li className="paragraph"><span className="span-element">Ethics:</span> Integrity and transparency are the cornerstones of our community, ensuring trust and credibility in all our interactions.</li>
-                    <li className="paragraph"><span className="span-element"> Community Growth:</span> are dedicated to not only enhancing individual businesses but also for the development of Kolkata's business landscape.</li>
+                    <li className="paragraph"><span className="span-element">1. Collaboration:</span> We believe in the power of working together, where diverse talents and ideas converge to create extraordinary outcomes.</li>
+                    <li className="paragraph"> <span className="span-element">2. Networking:</span> We foster a community where meaningful connections are formed, leading to fruitful relationships and mutual growth.</li>
+                    <li className="paragraph"><span className="span-element">3. Innovation:</span> We encourage forward-thinking and creativity, aiming to push the boundaries of traditional business practices.</li>
+                    <li className="paragraph"><span className="span-element">4. Ethics:</span> Integrity and transparency are the cornerstones of our community, ensuring trust and credibility in all our interactions.</li>
+                    <li className="paragraph"><span className="span-element">5. Community Growth:</span> are dedicated to not only enhancing individual businesses but also for the development of Kolkata's business landscape.</li>
                 </motion.ol>
                 <motion.h1 
                 

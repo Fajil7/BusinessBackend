@@ -103,7 +103,8 @@ function Listing() {
                     <h3 className="text">Please Fill the Form Carefully.</h3>
                     <p className='text-2'>Informations shared by you is important for your Credential & Directory listing.</p>
                 </motion.div>
-                <form className="listing-form-container" onSubmit={handleSubmit}>
+               <div className='form-main-container'>
+               <form className="listing-form-container" onSubmit={handleSubmit}>
                     <div className="two-list-input-container">
                         <motion.div
 
@@ -842,6 +843,7 @@ function Listing() {
                         </button>
                     </div>
                 </form>
+               </div>
             </div>
         </div>
     )
