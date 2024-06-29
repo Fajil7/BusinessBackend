@@ -257,35 +257,14 @@ body{
 .captcha-container{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  margin-left: 30px;
 }
 @media screen and (max-width: 600px) {
   .captcha-container{
     display: flex;
     flex-direction: column;
-  }
-}
-.captcha-input{
-  background-color: #fffffc;
-  box-shadow: 0 0 15px 0 #737574;
-	width: 16.5vw;
-  height: 43px;
-	margin: 10px;
-	padding: 6px;
-	border-radius: 5px; 
-}
-@media screen and (max-width: 600px) {
-  .captcha-input{
-    width: 59vw;
-  }
-}
-.captcha-input-2{
-  width: 14vw;
-}
-@media screen and (max-width: 600px) {
-  .captcha-input-2{
-    width: 53vw;
-   
+    margin-left: 0px;
   }
 }
 
