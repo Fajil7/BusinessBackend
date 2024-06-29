@@ -266,7 +266,7 @@ function Home() {
 
 			<div className='data-main-container'>
 				<div className="business-contianer">
-					<h1 className="heading">Localoty</h1>
+					<h1 className="heading">Locality</h1>
 					<div className="directory-data-container">
 						<div className="directory-data">
 							<p className="text-11">11+</p>
