@@ -106,7 +106,7 @@ function Home() {
 				whileInView={"show"}
 				viewport={{ once: false, amount: 0.3 }}
 
-				className='buss-heading'>Our Pocess</motion.h1>
+				className='buss-heading'>Our Process</motion.h1>
 			<div className='process-align-container'>
 				<motion.div
 
@@ -266,7 +266,7 @@ function Home() {
 
 			<div className='data-main-container'>
 				<div className="business-contianer">
-					<h1 className="heading">Localoty</h1>
+					<h1 className="heading">Locality</h1>
 					<div className="directory-data-container">
 						<div className="directory-data">
 							<p className="text-11">11+</p>

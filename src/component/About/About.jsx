@@ -351,7 +351,7 @@ function About() {
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
                 
-                className="buss-heading">Our process</motion.h1>
+                className="buss-heading">Our Process</motion.h1>  
                 <div 
                 className='process-align-container'>
                     <motion.div 
