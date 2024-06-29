@@ -28,7 +28,7 @@ const CardItem = (props) => {
                 <p className="card-possition">{businesscategory}</p>
                 <p className="card-possition">{id}</p>
             </div>
-            <Link to={`/forms/${id}`}><button className='view-more-btn'>View More</button></Link>
+{/*             <Link to={`/forms/${id}`}><button className='view-more-btn'>View More</button></Link> */}
 
         </motion.li>
     )
