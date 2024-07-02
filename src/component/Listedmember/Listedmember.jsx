@@ -10,7 +10,7 @@ function Listedmember() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/forms')
+        axios.get('http://localhost:5000/api/forms/getdata')
             .then(response => {
                 setUsers(response.data);
             })
@@ -23,7 +23,7 @@ function Listedmember() {
     return (
         <ul className='listed-member-ul-list-container'>
             {users.map(eachCard => (
-                <CardItem cardDetails={eachCard} key={eachCard.id} />
+                <CardItem key={eachCard.id} cardDetails={eachCard} />
             ))}
         </ul>
     );

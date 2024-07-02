@@ -3,6 +3,11 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants'
 import Listedmember from '../Listedmember/Listedmember';
 import './directory.css'
+import BirthDay from '../BirthDay/BirthDay';
+
+
+
+
 
 
 
@@ -26,6 +31,7 @@ function Directory() {
 
                 className='listed-member'>Listed Members</motion.h1>
             <Listedmember />
+          <BirthDay/>
         </>
     );
 }

@@ -7,6 +7,7 @@ import TestimonialSlider from '../TestimonialSlider/Testimonial';
 import { motion } from 'framer-motion'
 import { fadeIn } from '../../variants';
 import Listedmember from '../Listedmember/Listedmember';
+import Brand from '../Brand/Brand';
 
 
 function Home() {
@@ -185,15 +186,7 @@ function Home() {
 
 					className="buss-heading">Supporting Brands</motion.h1>
 				<div>
-					<marquee direction="left" scrollamount="20" className="marquee">
-						<img src="https://businesssphere.info/images/24.png" className="com-logo" />
-						<img src="https://businesssphere.info/images/logo.png" className="com-logo" />
-						<img src="https://businesssphere.info/images/20.png" className="com-logo" />
-						<img src="https://businesssphere.info/images/19.png" className="com-logo" />
-						<img src="https://businesssphere.info/images/25.jpeg" className="com-logo" />
-						<img src="https://businesssphere.info/images/26.jpeg" className="com-logo" />
-					</marquee>
-
+					<Brand/>
 
 				</div>
 			</div>
