@@ -1,37 +1,17 @@
-import React from 'react'
+import React from 'react';
+import './Testimonial.css';
 
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-
-
-const TestimonialCard = (props) => {
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    autoplay: true,
-    slidesToScroll: 1,
-    autoplaySpeed: 400
-  };
-
-  const { testimonialDetails } = props
-  const { quote, author, position, image } = testimonialDetails
+const TestimonialCard = ({ testimonialDetails }) => {
   return (
-    <li>
-      <div>
-      <img src={image} className='img'/>
-      <div>
-        <p>{quote}</p>
-        <p>{author}</p>
-        <p>{position}</p>
+    <div className='testimonial-card'>
+      <div className='img-container'>
+      <img src={testimonialDetails.image} className='testinomial-img'/>
       </div>
-      </div>
-    </li>
-  )
+      <p>{testimonialDetails.quote}</p>
+      <p><strong>{testimonialDetails.author}</strong></p>
+      <h3>{testimonialDetails.position}</h3>
+    </div>
+  );
 }
 
-export default TestimonialCard
+export default TestimonialCard;

@@ -16,7 +16,7 @@ app.use(express.json());
 
 
 app.use("/api/forms", router)
-app.use("/api/data", bransRoute)
+
 app.use("/api/testi", testimonialRoute)
 
 

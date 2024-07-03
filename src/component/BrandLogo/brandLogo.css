@@ -1,0 +1,16 @@
+.supporting-brand-logo-list {
+    width: 172px;
+    
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 40px;
+    
+}
+
+.com-logo-list:hover {
+    width: 192px;
+}
+.supporting-brand-logo-list-container{
+    margin-right: 30px;
+    margin-left: 40px;
+}

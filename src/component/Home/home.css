@@ -263,11 +263,11 @@ body {
 
 .com-logo {
     width: 142px;
-    /* Changed from 142px to 100% */
+    
     margin: 64px;
     display: inline-block;
     margin-right: 10px;
-    /* Center horizontally */
+    
 }
 
 .com-logo:hover {

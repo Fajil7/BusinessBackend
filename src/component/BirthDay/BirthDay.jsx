@@ -34,8 +34,8 @@ function BirthDay() {
         const birthdaysToday = birthdays.filter(birthday => birthday.dob === today);
 
         if (birthdaysToday.length > 0) {
-            const names = birthdaysToday.map(birthday => birthday.name).join(', ');
-            setPopupMessage(`Birthdays today: ${names}`);
+            const messages = birthdaysToday.map(birthday => `Happy Birthday ${birthday.name}!`);
+            setPopupMessage(messages);
             setShowPopup(true);
         }
     }, [birthdays]);
@@ -50,7 +50,7 @@ function BirthDay() {
 
     return (
         <div>
-            {showPopup && <Popup message={popupMessage} onClose={closePopup} />}
+            {showPopup && <Popup messages={popupMessage} onClose={closePopup} />}
         </div>
     );
 }
