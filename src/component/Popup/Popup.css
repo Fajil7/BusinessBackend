@@ -11,15 +11,16 @@
     border-radius: 10px;
 }
 
+
 .popup-content {
     text-align: center;
     font-size: 22px;
     font-family: "Goudy Bookletter 1911", sans-serif;
-    color: rgb(12, 158, 12);
+    color: rgb(86, 86, 145);
     font-weight: 600;
     width: 343px;
     background-color: #b4edb6;
-    
+
 
 }
 
@@ -31,7 +32,22 @@
     font-size: 40px;
     color: red;
 }
-.birthday-image{
+
+.birthday-image {
     width: 343px;
     height: 284px;
+}
+
+@media screen and (max-width: 600px) {
+    .popup {
+        width: 85%;
+        
+    }
+    .birthday-image{
+        width: 303px;
+        height: 184px;
+    }
+    .popup-content{
+        font-size: 18px;
+    }
 }

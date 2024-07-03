@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const connectDb = require('./utils/db');
 const router = require('./router/auth-router')
-const bransRoute = require("./router/brand-router");
+
 const testimonialRoute = require("./router/testimonial-router")
 
 

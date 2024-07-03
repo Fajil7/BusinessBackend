@@ -8,7 +8,7 @@ const TestimonialCard = ({ testimonialDetails }) => {
       <img src={testimonialDetails.image} className='testinomial-img'/>
       </div>
       <p>{testimonialDetails.quote}</p>
-      <p><strong>{testimonialDetails.author}</strong></p>
+      <p><strong>-{testimonialDetails.author}</strong></p>
       <h3>{testimonialDetails.position}</h3>
     </div>
   );
