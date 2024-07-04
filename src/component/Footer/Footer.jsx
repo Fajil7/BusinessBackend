@@ -22,18 +22,17 @@ function Footer() {
 			  <li><Link to="/" className='fotter-link-item'>Home</Link></li>
 			  <li><Link to="/about" className='fotter-link-item'>About</Link></li>
 			  <li><Link to="/directory" className='fotter-link-item'>Directory</Link></li>
-			  <li><Link to="/contact" className='fotter-link-item'>Contact us</Link></li>
+			  <li><Link to="/listing" className='fotter-link-item'>Listing From</Link></li>
 			</ul>
 			</div>
 		  </div>
 		  <div className="footer-section">
-		  <h4 className='h4-heading mobile-view-margin'>Useful Links</h4>
+		  <h4 className='h4-heading mobile-view-margin'>Support</h4>
 		  <div className='footer-items'></div>
 		  <ul className='secound-item-container mobile-view-margin'>
 			  <li><Link to="/faq" className='fotter-link-item'>FAQ</Link></li>
-			  <li><Link to="/listing" className='fotter-link-item'>Listing Form</Link></li>
+			  <li><Link to="/contact" className='fotter-link-item'>Contact us</Link></li>
 			  <li><Link to="/about" className='fotter-link-item'>Our Process</Link></li>
-			  <li><Link to="/about" className='fotter-link-item'>Why Choose Us</Link></li>
 			</ul>
 			
 		  </div>

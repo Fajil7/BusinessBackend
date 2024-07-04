@@ -3,6 +3,7 @@
 }
 body{
 	margin: 0px;
+	
 }
 
 .about-img{
@@ -17,7 +18,10 @@ body{
 		width: 100%;
 	}
 }
-
+.about-section-container{
+	width: 94%;
+	
+}
 .about-main-heading{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -33,6 +37,10 @@ body{
 		max-width: 334px;
 		width: 334px;
 		text-align: center;
+	}
+	.about-section-container{
+		width: 85%;
+		
 	}
 }
 .about-heading{

@@ -1,8 +1,14 @@
-body {
+*{
+  box-sizing: border-box;
+}
+
+html, body {
   box-sizing: border-box;
   margin: 0px;
   width: 100vw;
   overflow-x: hidden;
+  padding: 0px;
+
  
 }
 .w-icon{
