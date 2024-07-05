@@ -31,7 +31,7 @@ const Brand = () => {
   return (
     <>
       <div>
-        <marquee direction="left" scrollamount="20" className="marquee">
+        <marquee direction="left" scrollamount="20" className="marquee-container">
           <ul className='flex items-center unorder-list-container'>
 
             <img src="https://businesssphere.info/images/24.png" className="com-logo" />

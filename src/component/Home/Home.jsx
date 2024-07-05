@@ -122,17 +122,17 @@ function Home() {
 					className='one-process'>
 					<div className="process-detail-card">
 						<img
-							src="https://businesssphere.info/images/img-1.png"
-							className="profile"
+							src="https://img.freepik.com/free-vector/new-entries-concept-illustration_114360-5261.jpg?t=st=1720157752~exp=1720161352~hmac=c3ca9d47f0b1d2cc996111d9b4066d28afa8dfc2cc8b1a5442dd9849333420b2&w=740"
+							className="our-process-profile"
 						/>
 						<p className="apply-heading">Apply for Listing on Website</p>
 					</div>
 					<div className="process-detail-card">
 						<img
-							src="https://businesssphere.info/images/img-2.png"
-							className="profile"
+							src="https://img.freepik.com/free-vector/reviews-concept-landing-page_52683-18630.jpg?ga=GA1.1.940675991.1682000273&semt=ais_user"
+							className="our-process-profile"
 						/>
-						<p className="possition">Review</p>
+						<p className="process-text">Review</p>
 					</div>
 				</motion.div>
 				<motion.div
@@ -148,17 +148,17 @@ function Home() {
 					className='one-process'>
 					<div className="process-detail-card">
 						<img
-							src="https://businesssphere.info/images/img-3.png"
-							className="profile"
+							src="https://img.freepik.com/premium-vector/approval-mark-product-advantage-rating-reviews-meeting-requirement-high-quality-sign-quality-control_566886-3092.jpg?w=840"
+							className="our-process-profile"
 						/>
-						<p className="possition">Approval</p>
+						<p className="process-text">Approval</p>
 					</div>
 					<div className="process-detail-card collaborate">
 						<img
-							src="https://businesssphere.info/images/img-4.png"
-							className="profile"
+							src="https://img.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg?t=st=1720165105~exp=1720168705~hmac=6c8508df9107406283a66613028068840ebab9e1dcdc93c3578cd7eda4aba15b&w=740"
+							className="our-process-profile"
 						/>
-						<p className="possition">Collaborate</p>
+						<p className="process-text">Collaborate</p>
 					</div>
 				</motion.div>
 			</div>

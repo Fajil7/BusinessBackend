@@ -30,7 +30,7 @@ function Header() {
             <li className='item-hover cursor-pointer'><Link to="/contact">Contact us</Link></li>
           </ul>
         </div>
-        <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-md ">
+        <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border  rounded-md ">
           Login
         </button>
       </div>
@@ -48,7 +48,7 @@ function Header() {
             <li className='item-hover'><Link to='/directory'>Directory</Link></li>
             <li className='item-hover'><Link to='/about'>About</Link></li>
             <li className='item-hover'><Link to='/contact'>Contact us</Link></li>
-            <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-md ">
+            <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border  rounded-md ">
               Login
             </button>
           </ul>

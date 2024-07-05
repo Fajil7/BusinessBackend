@@ -49,6 +49,7 @@
 .birthday-image {
     width: 343px;
     height: 284px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 600px) {
