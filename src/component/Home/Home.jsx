@@ -186,7 +186,7 @@ function Home() {
 
 					className="buss-heading">Supporting Brands</motion.h1>
 				<div>
-					<Brand/>
+					<Brand />
 
 				</div>
 			</div>
