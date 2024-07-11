@@ -13,6 +13,7 @@ const FormList = () => {
   const fetchForms = async () => {
     try {
       const formsData = await getForms();
+      console.log(FormData)
       setForms(formsData);
     } catch (error) {
       console.error("Error fetching forms:", error);

@@ -7,6 +7,8 @@ const router = require('./router/auth-router')
 
 const testimonialRoute = require("./router/testimonial-router")
 
+const admin = require("./router/admin-router");
+
 
 const app = express();
 
@@ -18,6 +20,7 @@ app.use(express.json());
 app.use("/api/forms", router)
 
 app.use("/api/testi", testimonialRoute)
+app.use("/api/admin/register", admin)
 
 
 

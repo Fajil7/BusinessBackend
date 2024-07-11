@@ -311,6 +311,8 @@ body{
 	width: 83px;
 
 }
-.btn-container{
+.listing-btn-container{
   margin-bottom: 12px;
+  text-align: center;
+  margin-top: 25px;
 }

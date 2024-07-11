@@ -10,6 +10,10 @@ import Faq from './component/Faq/Faq';
 import Listing from './component/Listing/Listing';
 import Directory from './component/Directory/Directory';
 import Listedetail from './component/Listedetail/Listedetail';
+import AdminRegistration from './component/Admin/AdminRegistration';
+import AdminLogin from './component/Admin/AdminLogin';
+import FormList from './component/Admin/FormList';
+
 
 
 
@@ -29,6 +33,9 @@ function App() {
           <Route path='/listing' element={<Listing />} />
           <Route path='/directory' element={<Directory />} />
           <Route path='/forms/:id' element={<Listedetail />} />
+          <Route path='/formlist' element={<FormList />} />
+          <Route path="/admin-registration" element={<AdminRegistration/>}/>
+          <Route path="/admin-login" element={<AdminLogin/>}/>
 
         </Routes>
         <a className='w-icon' href='https://api.whatsapp.com/send/?phone=918582848434&text&type=phone_number&app_absent=0' target='-blank'>

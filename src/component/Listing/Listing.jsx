@@ -826,7 +826,7 @@ function Listing() {
                                 </p>
                             </motion.div>
                         </div>
-                        <div className="btn-container">
+                        <div className="listing-btn-container">
                             <button className="bg-amber-300 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-md " type='submit'>
                                 Submit
                             </button>

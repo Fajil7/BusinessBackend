@@ -12,7 +12,9 @@ function Listedmember() {
     useEffect(() => {
         axios.get('http://localhost:5000/api/forms/getdata')
             .then(response => {
+                
                 setUsers(response.data);
+               
             })
             .catch(error => {
                 console.error('Error fetching the users:', error);
